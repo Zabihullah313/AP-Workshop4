@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Voting {
     private int type; // 0 for one vote, 1 for multi votes
-    private String question;
+    String question;
     private HashMap<String, HashSet<Vote>> choices;
     private boolean isAnonymous;
     private ArrayList<Person> voters;

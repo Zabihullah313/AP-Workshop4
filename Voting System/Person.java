@@ -1,24 +1,28 @@
 public class Person {
 
-    private String FirstName;
-    private String LastName;
+    private String firstName;
+    private String lastName;
 
     public Person(String firstName, String lastName) {
-        FirstName = firstName;
-        LastName = lastName;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        firstName = firstName;
     }
     public void setLastName(String lastName) {
-        LastName = lastName;
+        lastName = lastName;
+    }
+
+    public String toString() {
+        return firstName + " " + lastName;
     }
 
 }
