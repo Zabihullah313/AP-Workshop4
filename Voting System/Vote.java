@@ -2,11 +2,15 @@ import java.util.Objects;
 
 public class Vote {
     private final Person voter;
-    private final String date;
+    private  String date;
 
     public Vote(Person voter, String date) {
         this.voter = voter;
         this.date = date;
+    }
+
+    public Vote(Person voter) {
+        this.voter = voter;
     }
 
     public Person getVoter() {
